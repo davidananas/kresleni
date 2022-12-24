@@ -1,3 +1,6 @@
+input.onPinPressed(TouchPin.P0, function () {
+    control.reset()
+})
 input.onButtonPressed(Button.A, function () {
     tecka_x += -1
     if (gumovani == 0) {
