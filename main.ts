@@ -1,6 +1,3 @@
-input.onPinPressed(TouchPin.P0, function () {
-    control.reset()
-})
 input.onButtonPressed(Button.A, function () {
     tecka_x += -1
     if (gumovani == 0) {
@@ -31,6 +28,9 @@ input.onButtonPressed(Button.B, function () {
     } else {
         led.unplot(tecka_x, tecka_y)
     }
+})
+input.onPinPressed(TouchPin.P1, function () {
+    control.reset()
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     tecka_y += -1
